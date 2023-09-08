@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 空格表示 谁的后代 */
+        ul div ul li{
+            color: red;
+        }
+        ol li a{
+            color: blue;
+            text-decoration: none;
+        }
+        ul li{
+            color: blueviolet;
+        }
+        ol li{
+            color: chocolate;
+        }
+        .one li{
+            color: cornflowerblue;
+        }
+        .one li.two{
+            color: darkgoldenrod;
+        }
+        .one div.therr{
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>第一种</li>
+        <li>第一种</li>
+        <div>
+            <ul>
+                <li>第一种嵌套</li>
+            </ul>
+        </div>
+        <li>第一种</li>
+        <li>第一种</li>
+    </ul>
+
+    <ol>
+        <li>第二种</li>
+        <li>
+            <a href="#">第二种嵌套</a>
+        </li>
+        <li>第二种</li>
+        <li>第二种</li>
+    </ol>
+
+    <ol class="one">
+        <li class="two">第三种</li>
+        <div class="therr">第三种嵌套</div>
+        <li>第三种</li>
+        <li>第三种</li>
+        <li>第三种</li>
+    </ol>
+    
+</body>
+</html>

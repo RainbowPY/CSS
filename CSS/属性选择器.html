@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 第一种属性写法  选择含有属性title 的*/
+        /* [title] {
+            color: red;
+        } */
+
+
+        /* 第二种属性写法 选择属性值title="like1"的 */
+        /* [title="like1"] {
+            color: red;
+        } */
+
+
+
+        /* 第三种属性写法   属性title中 首字母为l 的*/
+        /* [title^="l"] {
+            color: red;
+        } */
+
+
+
+        /* 第四种属性写法  属性title中 末尾字母为e 的*/
+        /* [title$="e"] {
+            color: red;
+        }  */
+
+
+        /* 第五种属性写法 属性title中 所有含字母i 的*/
+        [title*="i"] {
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div title="like1">我喜欢你1</div>
+    <div title="like2">我喜欢你2</div>
+    <div title="like">我喜欢你3</div>
+    <div title="like">我喜欢你4</div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 960px;
+            background-color: green;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .one {
+            width: 960px;
+            height: 100px;
+            overflow: hidden;
+            text-align: center;
+            line-height: 80px;
+            
+        }
+        .loge {
+            width: 200px;
+            height: 80px;
+            background-color: gray;
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .banner1 {
+            width: 540px;
+            height: 80px;
+            background-color: gray;
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .banner2 {
+            width: 200px;
+            height: 80px;
+            background-color: gray;
+            float: left;
+            margin-bottom: 10px;
+        }
+        .one::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .two {
+            width: 960px;
+            height: 30px;
+            background-color: gray;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 30px;
+        }
+        .therr {
+            width: 960px;
+            overflow: hidden;
+        }
+        .four {
+            width: 760px;
+            height: 200px;
+            float: left;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        .five {
+            width: 200px;
+            height: 420px;
+            float: right;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        .six {
+            width: 760px;
+            height: 210px;
+            float: left;
+            overflow: hidden;
+            margin-top: 10px;
+            
+        }
+        .therr::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .four::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .l1,.l2 {
+            width: 368px;
+            height: 198px;
+            border: 1px solid black;
+            margin-right: 10px;
+            float: left;
+            text-align: center;
+            line-height: 80px;
+            
+        }
+        .four::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .l3,.l4,.l5,.l6 {
+            width: 178px;
+            height: 198px;
+            border: 1px black solid;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            float: left;
+            text-align: center;
+            line-height: 30px;
+        }
+        .xis::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .l7,.l8,.l9 {
+            width: 198px;
+            height: 128px;
+            border: 1px black solid;
+            margin-bottom: 10px;
+            float: left;
+            text-align: center;
+            line-height: 50px;
+        }
+        .five::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .foot {
+            width: 960px;
+            height: 60px;
+            background-color: gray;
+            text-align: center;
+            line-height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="one">
+        <div class="loge">loge</div>
+        <div class="banner1">banner1</div>
+        <div class="banner2">banner2</div>
+    </div>
+    <div class="two">菜单</div>
+    <div class="therr">
+        <div class="four">
+            <div class="l1">栏目一</div>
+            <div class="l2">栏目二</div>
+        </div>
+        <div class="five">
+            <div class="l7">栏目七</div>
+            <div class="l8">栏目七</div>
+            <div class="l9">栏目七</div>
+        </div>
+        <div class="six">
+            <div class="l3">栏目三</div>
+            <div class="l4">栏目四</div>
+            <div class="l5">栏目五</div>
+            <div class="l6">栏目六</div>
+        </div>
+    </div>
+    <div class="foot">页脚</div>
+</div>
+</body>
+</html>

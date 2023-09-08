@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .box1 {
+            background-color: antiquewhite;
+            transform: translateX(100px);
+            /* 水平位移 */
+            transform: translateY(100px);
+            /* 垂直位移 */
+            transform: translateX(100px) translateY(100px);
+            /* 位移的链式编写 */
+        }
+        .box2 {
+            background-color: brown;
+            transform: scaleX(1.5);
+            /* 水平放大1.5倍 */
+            transform: scaleY(1.5);
+            /* 垂直放大1.5倍 */
+            transform: scale(1.5,1.5);
+            /* 缩放的链式编写 */
+        }
+        .box3 {
+           background-color: violet;
+           transform: rotateZ(20deg); 
+           /* 顺时针旋转20度 */
+        }
+        .box4 {
+            background-color: teal;
+            transform: skewX(30deg);
+            /* 水平扭曲30度 */
+            transform: skewY(20deg);
+            /* 垂直扭曲20度 */
+            transform: skew(30deg,20deg);
+            /* 扭曲的链式编写 */
+        }
+        .box5 {
+            background-color: yellow;
+            transform-origin: left top;
+            /* 变换原点在元素的左上角 */
+            transform: rotateZ(20deg);
+            /* 顺时针旋转20度 */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box box1">位移</div>
+    <div class="box box2">缩放</div>
+    <div class="box box3">旋转</div>
+    <div class="box box4">扭曲</div>
+    <div class="box box5">变换原点</div>
+</body>
+</html>

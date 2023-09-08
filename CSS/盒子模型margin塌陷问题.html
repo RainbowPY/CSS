@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .one,.two,.therr {
+            width: 100px;
+            height: 100px;
+            font-size: 40px;
+            display: inline-block;
+            /* display 可以将元素 改为快级元素 和 行内 行内块 元素
+            none 元素会被隐藏
+            block 块级
+            inline 行内
+            inlin-block 行内块
+            
+            */
+        }
+        .one {
+            background-color: aqua;
+        }
+        .two {
+            background-color: blue;
+        }
+        .therr {
+            background-color: red;
+        }
+        #d1 {
+            width: 400px;
+            height: 400px;
+            background-color: gray;
+            /* border: 10px red solid; */
+            /* 第一种 加 边框 */
+            /* padding: 10px; */
+            /* 第二种  加内边距 */
+            overflow: hidden;
+            /* 第三种  */
+        }
+        #d2 {
+            width: 100px;
+            height: 100px;
+            background-color: chartreuse;
+            margin-top: 50px;
+        }
+        #d3 {
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="therr">3</div>
+    <hr>
+    <div id="d1">
+        <div id="d2">第一</div>
+        <div id="d3">第二</div>
+    </div>
+</body>
+</html>

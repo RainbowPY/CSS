@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         div>a {
+            color: red;
+            text-decoration: none;
+         }
+         /*     > 为子代标签     */
+         /* div p a{
+            color: blue;
+            text-decoration: none;
+         } */
+         div>p>a {
+            color: blue;
+            text-decoration: none;
+         }
+         /* div>p>div>a {
+            color: chartreuse;
+         }   错误示范  需要加标签 */  
+         .one a{
+            color: darkgreen;
+            text-decoration: none;
+         }
+
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#">张三</a>
+        <a href="#">李四</a>
+        <a href="#">王五</a>
+        <p>
+            <a href="#">赵六</a>
+            <div class="one">
+                <a href="#">孙琪</a>
+            </div>
+        </p>
+       
+    </div>
+</body>
+</html>

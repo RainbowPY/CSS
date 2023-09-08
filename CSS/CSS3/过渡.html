@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 1000px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            transition-property: all;
+            /* 过渡所有能过渡的属性。 */
+            transition-duration: 3s;
+            /* 过渡的持续时间为3秒 */
+            transition-delay: 0.5s;
+            /* 开始过渡的延迟时间为0.5秒 */
+            transition-timing-function: linear;
+            /* 过渡的类型为线性过渡 */
+            transition:3s 0.5s linear all;
+            /* 复合属性 */
+        }
+        .box1:hover .box2{
+            width: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+
+</body>
+</html>

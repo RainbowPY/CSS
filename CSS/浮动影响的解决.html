@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 600px;
+            background-color: gray;
+            border: 1px black solid;
+        }
+        .d1,.d2,.d3 {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            margin: 10px;
+            float: left;
+        }
+        .d4 {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            margin: 10px;
+            /* clear: both; */
+            /* 第一种 */
+            /* 清除之前所有浮动  但是自身不能浮动*/
+            float: left;
+        }
+        .outer::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        /* 第二种 最后加入一个空值的块元素 前面必须都为浮动 */
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 结构一 子代中的第一个p 标签为红色 */
+        /* div>p:first-child {
+            color: red;
+
+        } */
+
+
+        /* 结构二 子代中的第一个p 标签为红色 */
+        /* div p:first-child{
+            color: red;
+        } */
+
+
+        /* 结构三 子代中的第一个p 标签为红色 */
+        p:first-child {
+            color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 结构一 -->
+    <!-- <div>
+        <p>张三：100分</p>
+        <p>李四：90分</p>
+        <p>王五：80分</p>
+        <p>赵六：70分</p>
+    </div> -->
+
+    <!-- 结构二 -->
+    <!-- <div>
+        <marquee >
+            <p>张三：100分</p>
+        </marquee>
+        <p>李四：90分</p>
+        <p>王五：80分</p>
+        <p>赵六：70分</p>
+    </div> -->
+
+    <!-- 结构三 -->
+    <p>哈哈哈</p>
+    <div>
+        <p>66666</p>
+        <marquee >
+            <p>张三：100分</p>
+        </marquee>
+        <p>李四：90分</p>
+        <p>王五：80分</p>
+        <p>赵六：70分</p>
+    </div>
+</body>
+</html>

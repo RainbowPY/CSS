@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 600px;
+            background-color: #ccc;
+            padding: 10px;
+            position: relative;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+        .box1 {
+            background-color: aqua;
+        }
+        .box2 {
+            background-color: yellow;
+            position: absolute;
+            /* 绝对定位 */
+            top: 210px;
+            left: 10px;
+            transition: 1s all linear;
+            
+        }
+        .box3 {
+            background-color: violet;
+        }
+        .outer:hover .box2{
+            left: 210px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+</body>
+</html>

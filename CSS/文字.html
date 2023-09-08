@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* !important > ID选择器 > 类选择器 > 元素选择器 > 通配符选择器 > 继承 */
+        #aini{
+            color: blue;
+        }
+        h2{
+            color: red;
+        }
+        .one{
+            color: aqua !important;
+        }
+        .therr{
+            /* color: rgb(255,0, 0);
+            color: rgb(100%, 0,0 );
+            color: rgba(255,0,0,0.5); */
+            /* rgba a为透明度 r为红色 g 为绿色  a为蓝色 */
+            /* color: #ff0000; */
+            color: hsl(180,50% ,50% );
+            /* 色相 饱和度 亮度 */
+        }
+        div{
+            font-size: 40px;
+            font-family: "楷体","宋体","微软雅黑";
+            /* 从前往后推 直到可以用 */
+            font-style: italic;
+            /* 斜体 推荐使用  normal 为正常值*/
+            font-style: oblique;
+            /* 斜体  但是不推荐 */
+            font-weight: 700;
+            /* ligter 细 100-300
+             normal 正常 400-500
+              bold 粗   600 ~
+               bolder 很粗  (不常用) */
+            font: 700 italic 40px "楷体","宋体","微软雅黑",sans-serif;
+            /* 必须字体大小和字体族  字体最为最后  大小为倒数第二 */
+            /* sans-serif  非衬线字体 比较圆润 */
+            /* serif 衬线字体  结构清晰 有棱有角 */
+            text-indent: 2em;
+            /* 首字母缩进 */
+        }
+
+    </style>
+</head>
+<body>
+    <h2 class="one" id="aini">我爱你</h2>
+    <p class="therr">我真的爱你</p>
+    <div>哈哈哈</div>
+</body>
+</html>

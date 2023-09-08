@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: decimal;
+            /* 列表符号 */
+            list-style-position: outside;
+            /* 列表符号位置 */
+            list-style-image: url("./video.gif");
+            /* 自定义列表符号 */
+            list-style: decimal outside url("./video.gif");
+            /* 复合属性  3个属性可以通用与 ol ul li 列表 */
+        }
+        /* li {
+            background-color: blue;
+
+        } */
+    </style>
+</head>
+<body>
+    <ul>
+        <li>张三</li>
+        <li>李四</li>
+        <li>王五</li>
+    </ul>
+</body>
+</html>

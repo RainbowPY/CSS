@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* 第一个 单词 */
+        div::first-letter{
+            color: red;
+            font-size: 30px;
+        }
+        /* 第一行 */
+        div::first-line{
+            background-color: yellow;
+        }
+        /* 选择时状态 */
+        div::selection{
+            background-color: aqua;
+            color: red;
+        }
+        /* 文本框内默认文字 */
+        input::placeholder{
+            color: gold;
+        }
+        /* p 标签前后添加内容  content + 添加内容 */
+        p::before{
+            content: "￥";
+        }
+        p::after{
+            content: ".00";
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo <br>ex architecto aperiam id excepturi tenetur nisi quod libero magnam, quia nesciunt optio, numquam officiis sint dicta perspiciatis? Deserunt asperiores vel dolorem facere ad? Quas dolores ut reiciendis deleniti temporibus suscipit eos distinctio et, optio quisquam. Repellat ipsum, quam, obcaecati quisquam doloribus iusto eum illum repudiandae possimus quibusdam aut officia! Culpa?
+
+    </div>
+    <input type="text" placeholder="请输入用户名">
+    <br>
+    <br>
+    <p>199</p>
+    <p>299</p>
+    <p>399</p>
+    <p>499</p>
+</body>
+</html>

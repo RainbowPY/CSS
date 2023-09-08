@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            margin: 0 auto;
+            margin-top: 300px;
+            transform-style: preserve-3d;
+            /* 开启3D空间 */
+            perspective: 500px;
+            /* 开启景深 */
+            perspective-origin: 400px 300px;
+            /* 透视点 及观测的点（人的角度位置） */
+        }
+        .box1 {
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            /* 位移 */
+            /* transform: translateZ(200px); */
+            /* 设置 z 轴位移，向屏幕外位移 200px */
+            /* transform: translate3d(100px,100px,100px); */
+            /* x , y , z 同时位移 */
+
+            /* 旋转 */
+            /* transform: rotateX(30deg); */
+            /* 面对 x 轴正方向 顺势正旋转30度 */
+            /* transform: rotateY(30deg); */
+            /* 面对 y 轴正方向 顺势正旋转30度 */
+            /* transform: rotate3d(1,1,1,30deg); */
+            /* 意思是： x 、 y 、 z 分别旋转
+30 度。 */
+            
+            transform:scaleZ(2) ;
+            /* z 轴方向的缩放比例为2倍 */
+            transform: scale3d(2,2,2);
+            /* x y z 轴方向的缩放比例为2倍 */
+
+        
+
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">你好</div>
+    </div>
+</body>
+</html>

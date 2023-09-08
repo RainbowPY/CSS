@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 文本模糊值 */
+        .box1 {
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: black;
+        }
+        h1 {
+            font-size: 100px;
+            line-height: 400px;
+            color: white;
+            text-align: center;
+            text-shadow: 5px 5px 10px red;
+            /* 文字阴影  x   y  模糊值  颜色 */
+        }
+        .box2 {
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: white;
+        }
+        p {
+            font-size: 100px;
+            font-weight: bold;
+            line-height: 400px;
+            color: white;
+            text-align: center;
+            text-shadow: 0px 0px 20px red;
+        }
+
+
+        /* 文本换行 */
+        .box3 {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            /* white-space: pre; */
+            /* 原样输出，与 pre 标签的效果相同。 */
+            white-space: pre-wrap;
+            /* 在 pre 效果的基础上，超出元素边界自动换行。 */
+            /* white-space: pre-line; */
+            /* 在 pre 效果的基础上，超出元素边界自动换行，且只识别文本中的换行，空格
+会忽略。 */
+            /* white-space: nowrap; */
+            /* 强制不换行 */
+            /* white-space: normal; */
+            /* 文本超出边界自动换行，文本中的换行被浏览器识别为一个空格。（默认值） */
+        }
+
+
+        /* 文本溢出 */
+        .box4 {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            overflow: hidden;
+            white-space: nowrap;
+            /* text-overflow: clip; */
+            /* 当内联内容溢出时，将溢出部分裁切掉。 （默认值） */
+            text-overflow: ellipsis;
+            /* ellipsis 当内联内容溢出块容器时，将溢出部分替换为 ... 。 */
+        }
+        
+        
+        
+        /* 文本修饰 */
+        .box5 {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+        }
+        h2 {
+            font-size: 40px;
+            font-weight: bold;
+            text-decoration: overline;
+            text-decoration-style: dashed ;
+            text-decoration-color: blue ;
+        }
+
+        /* 文本描边 */
+        .box6 {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            background-color: white;
+        }
+        h3 {
+            font-size: 40px;
+            color: white;
+            -webkit-text-stroke-width:3px;
+            -webkit-text-stroke-color: green;
+        }
+        /* 空心文字 */
+    </style>
+</head>
+<body>
+    <!-- 文本模糊值 -->
+    <div class="box1">
+    <h1>我爱你</h1>
+    </div>
+    <div class="box2">
+        <p>我爱你<p>
+        </div>
+
+
+        <!-- 文本换行 -->
+     <div class="box3">
+        惟江上之清风
+        与山间之明月
+        惟江上之清风
+        与山间之明月
+        惟江上之清风
+        与山间之明月
+        惟江上之清风
+        与山间之明月
+        惟江上之清风
+        与山间之明月
+        惟江上之清风
+        与山间之明月
+     </div>  
+
+
+     <!-- 文本溢出 -->
+     <div class="box4">
+        惟江上之清风 与山间之明月 与山间之明月 与山间之明月与山间之明月 与山间之明月
+        与山间之明月
+        惟江上之清风
+        与山间之明月
+        惟江上之清风
+        与山间之明月
+        惟江上之清风
+        与山间之明月
+        惟江上之清风
+        与山间之明月
+        惟江上之清风
+        与山间之明月
+     </div> 
+
+     <!-- 文本修饰 -->
+     <div class="box5">
+        <h2>惟江上之清风 与山间之明月</h2>
+     </div>
+
+     <!-- 文本描边 -->
+     <div class="box6">
+        <h3>惟江上之清风 与山间之明月</h3>
+
+     </div>
+
+</body>
+</html>与山间之明月

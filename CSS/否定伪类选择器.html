@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div>p:not(.one){
+            color: red;
+        } */
+        /* 否定伪类选择 （）里为不选择内容 */
+        /* div>p:not([title="哈哈"]){
+            color: red;
+        } */
+
+        div>p:not(:first-child){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>第1个</p>
+        <p>第2个</p>
+        <p>第3个</p>
+        <p>第4个</p>
+        <p>第5个</p>
+        <p>第6个</p>
+        <p>第7个</p>
+        <p class="one" title="哈哈">第8个</p>
+        <p class="one" title="哈哈">第9个</p>
+        <p class="one">第10个</p>
+    </div>
+</body>
+</html>
